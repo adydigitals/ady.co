@@ -2,168 +2,151 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ady.co - Digital Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Ady.co for Business</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
     body {
-      margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: #000;
-      color: #fff;
-      overflow-x: hidden;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      margin: 0;
+      padding: 0;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
     }
-    header {
+
+    .hero {
       text-align: center;
-      padding: 50px 20px;
+      margin-top: 30px;
+      animation: fadeIn 2s ease;
     }
-    header img {
-      width: 150px;
-      border-radius: 50%;
-      border: 3px solid #9b59b6;
-      box-shadow: 0 0 20px #9b59b6;
+
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
     }
-    header h1 {
-      font-size: 2.5em;
-      color: #9b59b6;
-      text-shadow: 0 0 10px #9b59b6;
+
+    .hero p {
+      font-size: 16px;
+      color: #f0f0f0;
+      margin-bottom: 20px;
     }
-    .socials {
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(8px);
       text-align: center;
-      margin: 20px 0;
+      width: 90%;
+      max-width: 400px;
+      animation: fadeIn 2.5s ease;
     }
-    .socials a {
-      margin: 0 10px;
-      display: inline-block;
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
     }
-    .socials img {
-      width: 50px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .socials img:hover {
-      transform: scale(1.2);
-      box-shadow: 0 0 20px #9b59b6;
-    }
-    .socials span {
-      display: block;
-      margin-top: 5px;
-      color: #ccc;
-    }
-    form {
-      text-align: center;
-      padding: 20px;
-    }
-    form input, form textarea {
-      width: 300px;
+
+    input, textarea {
+      width: 100%;
       padding: 10px;
-      margin: 10px;
-      background: #111;
-      border: 1px solid #9b59b6;
-      color: #fff;
-      border-radius: 5px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+      resize: none;
     }
-    form button {
-      background: #9b59b6;
+
+    button {
+      background: #ff4b2b;
+      color: white;
       border: none;
       padding: 10px 20px;
-      border-radius: 5px;
+      border-radius: 20px;
       cursor: pointer;
-      color: #fff;
-      box-shadow: 0 0 10px #9b59b6;
+      transition: all 0.3s ease;
     }
-    .reviews {
-      overflow: hidden;
-      white-space: nowrap;
-      padding: 30px 0;
+
+    button:hover {
+      background: #ff416c;
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #ff416c;
     }
-    .review-slider {
+
+    .social {
+      margin-top: 15px;
+    }
+
+    .social a {
       display: inline-block;
-      animation: slide 20s linear infinite;
+      margin: 0 10px;
+      background: rgba(255,255,255,0.2);
+      padding: 10px;
+      border-radius: 50%;
+      color: white;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.3s ease;
     }
-    .review {
-      display: inline-block;
-      width: 300px;
-      margin: 0 20px;
-      background: #111;
-      padding: 15px;
-      border: 1px solid #9b59b6;
-      border-radius: 10px;
-      box-shadow: 0 0 15px #9b59b6;
+
+    .social a:hover {
+      background: #ffd700;
+      color: #333;
+      transform: rotate(10deg) scale(1.1);
     }
-    @keyframes slide {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-100%); }
-    }
+
     footer {
-      text-align: center;
-      padding: 20px;
-      color: #9b59b6;
-      text-shadow: 0 0 10px #9b59b6;
+      margin-top: 20px;
+      font-size: 12px;
       animation: glow 2s infinite alternate;
     }
+
     @keyframes glow {
-      from { text-shadow: 0 0 10px #9b59b6; }
-      to { text-shadow: 0 0 20px #e91e63; }
+      from { text-shadow: 0 0 5px #fff; }
+      to { text-shadow: 0 0 20px #ffd700; }
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 26px;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="https://i.postimg.cc/L6DNc0fM/Screenshot-2025-06-18-130515.png" alt="Profile Photo">
-    <h1>Adybillah Digital Services</h1>
-  </header>
 
-  <div class="socials">
-    <a href="https://wa.me/60108753171" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp"><span>WhatsApp</span></a>
-    <a href="mailto:adybillah46@gmail.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email"><span>Email</span></a>
-    <a href="https://www.fiverr.com/axyyy_/buying?source=avatar_menu_profile" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968815.png" alt="Fiverr"><span>Fiverr</span></a>
+  <div class="hero">
+    <h1>Hi, I'm Ady 👋</h1>
+    <p>Your Digital Solution Partner 🚀<br>
+    Websites • Branding • Freelance Services</p>
   </div>
 
-  <form action="https://formspree.io/f/meokzkzd" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required><br>
-    <input type="email" name="email" placeholder="Your Email" required><br>
-    <textarea name="message" placeholder="Your Message" required></textarea><br>
-    <button type="submit">Send Message</button>
-  </form>
+  <div class="container">
+    <p>Let's connect! Fill the form or reach me directly:</p>
 
-  <div class="reviews">
-    <div class="review-slider">
-      <div class="review">
-        <p>"Ady transformed my online store into a high-converting machine!"</p><span>- Lisa M.</span>
-      </div>
-      <div class="review">
-        <p>"Fantastic service and very professional! Highly recommend."</p><span>- Mike T.</span>
-      </div>
-      <div class="review">
-        <p>"He gave my gaming brand a futuristic vibe. 5 stars!"</p><span>- Kevin R.</span>
-      </div>
-      <div class="review">
-        <p>"Best freelancer I've worked with. Quick and reliable!"</p><span>- Sophia K.</span>
-      </div>
-      <div class="review">
-        <p>"Superb design and fast delivery!"</p><span>- Daniel S.</span>
-      </div>
-      <div class="review">
-        <p>"My website looks amazing now. Will work again!"</p><span>- Rachel F.</span>
-      </div>
+    <form action="mailto:adybillah46@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="social">
+      <a href="https://wa.me/60108753171" target="_blank" title="WhatsApp">📱</a>
+      <a href="https://www.fiverr.com/axyyy_/buying?source=avatar_menu_profile" target="_blank" title="Fiverr">🎨</a>
+      <a href="mailto:adybillah46@gmail.com" title="Email">✉️</a>
     </div>
   </div>
 
   <footer>
-    Made by Ady.co
+    Made by <strong>Ady.co</strong> 🚀
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-  <script>
-    particlesJS("body", {
-      "particles": {
-        "number": { "value": 80 },
-        "color": { "value": "#9b59b6" },
-        "shape": { "type": "circle" },
-        "opacity": { "value": 0.5 },
-        "size": { "value": 3 },
-        "move": { "enable": true, "speed": 2 }
-      }
-    });
-  </script>
 </body>
 </html>
