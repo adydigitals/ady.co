@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Ady.co for Business</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      overflow: hidden;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(8px);
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+      animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+      resize: none;
+    }
+
+    button {
+      background: #ff4b2b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #ff416c;
+    }
+
+    .social a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .social a:hover {
+      color: #ffd700;
+    }
+
+    footer {
+      margin-top: 15px;
+      font-size: 12px;
+      color: #ddd;
+      animation: fadeText 3s infinite alternate;
+    }
+
+    @keyframes fadeText {
+      from { opacity: 0.5; transform: scale(1); }
+      to { opacity: 1; transform: scale(1.05); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>ady.co</h1>
+    <p>Let's connect! I’m open for business, collaborations, and freelance projects.</p>
+
+    <form action="mailto:adybillah46@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="social">
+      <p>Or reach me directly:</p>
+      <a href="https://wa.me/60108753171" target="_blank">WhatsApp</a>
+      <a href="https://www.fiverr.com/axyyy_/buying?source=avatar_menu_profile" target="_blank">Fiverr</a>
+      <a href="mailto:adybillah46@gmail.com">Email</a>
+    </div>
+
+    <footer>
+      Made by <strong>Ady.co</strong> 🚀
+    </footer>
+  </div>
+</body>
+</html>
